@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kedai Jus - Penjualan Jus Sehat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kedai Jus Sehat</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="daftar-jus.html">Daftar Jus</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produk">
+            <h2>Daftar Jus Kami</h2>
+            <div class="product-list">
+                <div class="product-card" onclick="showDetail(0)">
+                    <img src="jeruk.jpg" alt="Jus Jeruk">
+                    <h3>Jus Jeruk</h3>
+                    <p>Rp 15.000</p>
+                </div>
+                <div class="product-card" onclick="showDetail(1)">
+                    <img src="apel.png" alt="Jus Apel">
+                    <h3>Jus Apel</h3>
+                    <p>Rp 18.000</p>
+                </div>
+                <div class="product-card" onclick="showDetail(2)">
+                    <img src="mangga.jpg" alt="Jus Mangga">
+                    <h3>Jus Mangga</h3>
+                    <p>Rp 20.000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="detail" style="display:none;">
+            <h2>Detail Jus</h2>
+            <div id="detail-content"></div>
+            <button onclick="closeDetail()">Tutup</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kedai Jus Sehat Alghani.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
